@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.gmail.andrewandy</groupId>
+    <artifactId>Ascendency</artifactId>
+    <version>0.1-ALPHA</version>
+    <packaging>pom</packaging>
+    <properties>
+        <project.exec>AscendencyClient/gradlew.bat</project.exec>
+    </properties>
+
+    <modules>
+        <module>AscendencyServerPlugin</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>1.6.0</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>gradle</id>
+                        <phase>prepare-package</phase>
+                        <configuration>
+                            <executable>${project.exec}</executable>
+                            <arguments>
+                                <argument>build</argument>
+                                <argument>-Pgroup=${project.groupId}</argument>
+                                <argument>-Pversion=${project.version}</argument>
+                                <argument>-S</argument>
+                            </arguments>
+                        </configuration>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
