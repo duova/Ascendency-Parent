@@ -45,12 +45,13 @@ pick up the necessary dependencies.
 You can find the compiled jars and the source jars here:
 <br>
 <br>
-* AscendencyServerPlugin
-    ```bash
+
+* AscendencyServerPlugin    
+    ```
     AscendencyServerPlugin/target
     ```
 * AscendencyClient
-    ```bash
+    ```
     AscendencyClient/build/libs
     ```
 <br>
