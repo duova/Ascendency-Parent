@@ -5,6 +5,11 @@ Welocome!
 This repo contains the parent project for some custom stuff on the
 <b>Ascendency</b> modded Minecraft server.
 
+<h2>Cloning</h2>
+In order to keep the sub-modules updated, please run:
+```bash
+git submodule foreach git pull
+```
 <h2>Compiling</h2>
 In order to have maven build the sources alongside forge, you will need to install a jar to your local maven repository.
 <br>
