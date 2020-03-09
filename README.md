@@ -32,7 +32,7 @@ Once this is complete, you can then install the module to the repository.
 That being said, AscendencyClient will <b>not</b> be installed into the maven repository
 this is because the client is a forge mod - built by gradle.
 <br>
-```base
+```bash
 maven clean install
 ```
 You <i>must</i> install install to the repo in order for gradle to correctly
@@ -48,7 +48,9 @@ You can find the compiled jars and the source jars here:
 * AscendencyServerPlugin
     ```bash
     AscendencyServerPlugin/target
+    ```
 * AscendencyClient
     ```bash
     AscendencyClient/build/libs
+    ```
 <br>
