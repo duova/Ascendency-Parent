@@ -16,21 +16,13 @@
         <module>AscendencyServerPlugin</module>
     </modules>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>exec-maven-plugin</artifactId>
-            <version>1.6.0</version>
-        </dependency>
-
-    </dependencies>
-
     <build>
-		<defaultGoal>package</defaultGoal>
+        <defaultGoal>clean package</defaultGoal>
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
+                <version>1.6.0</version>
                 <executions>
                     <execution>
                         <id>gradle</id>
