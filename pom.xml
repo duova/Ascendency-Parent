@@ -14,35 +14,10 @@
 
     <modules>
         <module>AscendencyServerPlugin</module>
+        <module>AscendencyClient</module>
     </modules>
 
     <build>
-        <defaultGoal>clean package</defaultGoal>
-        <plugins>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>1.6.0</version>
-                <executions>
-                    <execution>
-                        <id>gradle</id>
-                        <phase>prepare-package</phase>
-                        <configuration>
-                            <executable>${project.exec}</executable>
-                            <arguments>
-                                <argument>build</argument>
-                                <argument>-Pgroup=${project.groupId}</argument>
-                                <argument>-Pversion=${project.version}</argument>
-                                <argument>-S</argument>
-                            </arguments>
-                        </configuration>
-                        <goals>
-                            <goal>exec</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
+        <defaultGoal>clean install</defaultGoal>
     </build>
-
 </project>
