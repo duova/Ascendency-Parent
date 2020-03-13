@@ -9,16 +9,15 @@
     <version>0.1-ALPHA</version>
     <packaging>pom</packaging>
     <properties>
-        <project.exec>AscendencyCustomMod/gradlew.bat</project.exec>
+        <project.exec>AscendencyClient/gradlew.bat</project.exec>
     </properties>
 
     <modules>
         <module>AscendencyServerPlugin</module>
-        <module>AscendencyCustomMod</module>
+        <module>AscendencyClient</module>
     </modules>
 
     <build>
         <defaultGoal>clean install</defaultGoal>
     </build>
-
 </project>

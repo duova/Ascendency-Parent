@@ -1,6 +1,8 @@
-[submodule "AscendencyCustomMod"]
-	path = AscendencyCustomMod
-	url = https://github.com/md5sha256/AscendencyCustomMod.git
+[submodule "AscendencyClient"]
+	path = AscendencyClient
+	url = https://github.com/md5sha256/AscendencyClient
+	branch = master
 [submodule "AscendencyServerPlugin"]
 	path = AscendencyServerPlugin
 	url = https://github.com/md5sha256/AscendencyServerPlugin.git
+	branch = master
